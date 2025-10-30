@@ -1,0 +1,42 @@
+:root{
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --bg: #f8f9fa;
+  --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+body{
+  font-family: var(--font-family);
+  background: var(--bg);
+}
+
+/* Sidebar styling */
+#sidebar{
+  min-height: 100vh;
+  border-right: 1px solid rgba(0,0,0,0.05);
+}
+#sidebar .nav-link{
+  color: rgba(0,0,0,0.8);
+}
+#sidebar .nav-link.active{
+  background: rgba(13,110,253,0.08);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.card{
+  border-radius: 0.75rem;
+}
+
+footer.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px){
+  #sidebar{
+    display: none;
+  }
+}
